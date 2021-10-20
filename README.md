@@ -2,7 +2,7 @@
 
 ## Programming the [MAX78000](https://www.maximintegrated.com/en/products/microcontrollers/MAX78000.html) with the Bootloader Firmware
 
-_Note: The [MaximSDK](https://www.maximintegrated.com/en/design/software-description.html/swpart=SFW0010820A#) has to be installed before following the stpes below_
+_Note: The [MaximSDK](https://www.maximintegrated.com/en/design/software-description.html/swpart=SFW0010820A#) has to be installed before following the steps below_
 
 Use the following steps to program the [MAX78000FTHR](https://www.maximintegrated.com/en/products/microcontrollers/MAX78000FTHR.html) board with bootloader code:
 1.	Connect the micro-USB cable to the [MAX78000FTHR](https://www.maximintegrated.com/en/products/microcontrollers/MAX78000FTHR.html) and the PC.
