@@ -1,0 +1,39 @@
+Maxim Firmware Downloader
+
+
+Flags:
+	-p: port
+	-f: msbl file
+	-m: mass target flash, Optional.
+					If it's not specified, the default is single target flash. It flashes target and exits.
+
+	-r: Reset device after Flash. Optional.
+					If it's not specified, it directly jumps to main firmware, without restarting.
+
+	-c: Interface Selection. Optional.
+					If it's not specified, i2c is used as default. Options are i2c, spi and uart.
+	
+	-s: Set partial page size. Optional.
+					If it's not specified, the page data will be sent as single chunk from host to bootloader.
+
+	Single Target Flash
+		./download_fw_over_host.py -f "hello_world.msbl" -p "/dev/ttyACM2"
+
+	Mass Target Flash:
+		./download_fw_over_host.py -f "hello_world.msbl" -p "/dev/ttyACM2" -m
+
+
+	Restart device after downloading finishes:
+		./download_fw_over_host.py -f "hello_world.msbl" -p "/dev/ttyACM2" -r
+
+Example:
+	Windows(cmd):
+		./download_fw_over_host.exe -f "hello_world.msbl" -p "COM1"
+
+	Linux/MaxOS(cmd):
+		python ./download_fw_over_host.py -f "hello_world.msbl" -p "/dev/ttyACM2"
+
+Required:
+	- Python 2.7
+	- pyserial (https://pythonhosted.org/pyserial/pyserial.html)
+	- Or you can run "pip install -r requirements.txt" command to install required python components
