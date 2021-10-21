@@ -14,7 +14,7 @@ Use the following steps to program the [MAX78000FTHR](https://www.maximintegrate
     cd c: /max78000_demo
 ```
 
-1) To flash the bootloader:
+1) To flash the bootloader to the board:
 
 ```shell
     openocd -s $MAXIM_PATH/tools/OpenOCD/scripts -f interface/cmsis-dap.cfg -f target/max78000.cfg -c 'init ;halt;max32xxx mass_erase 0;program MAX78000_Bootloader_vx_x_x.bin verify reset exit 0x10000000'
