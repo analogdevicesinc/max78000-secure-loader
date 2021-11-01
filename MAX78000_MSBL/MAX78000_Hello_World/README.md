@@ -8,40 +8,40 @@ This version of Hello_World prints an incrementing count to the console UART and
 
 ## Setup
 
-If using the Standard EvKit (EvKit_V1):
+If using the Standard EvKit [(EvKit_V1)](https://www.maximintegrated.com/en/products/microcontrollers/MAX78000EVKIT.html):
 
-- Connect a USB cable between the PC and the CN1 (USB/PWR) connector.
-- Connect pins 1 and 2 (P0_1) of the JH1 (UART 0 EN) header.
-- Open a terminal application on the PC and connect to the EV kit's console UART at 115200, 8-N-1.
-- Close jumper JP1 (LED1 EN).
-- Close jumper JP2 (LED2 EN).
-- Select "`EvKit_V1`" for `BOARD` in `Makefile`
+1. Connect a USB cable between the PC and the CN1 (USB/PWR) connector.
+2. Connect pins 1 and 2 (P0_1) of the JH1 (UART 0 EN) header.
+3. Open a terminal application on the PC and connect to the EV kit's console UART at 115200, 8-N-1.
+4. Close jumper JP1 (LED1 EN).
+5. Close jumper JP2 (LED2 EN).
+6. Select "`EvKit_V1`" for `BOARD` in `Makefile`
 
-```Makefile
-...
-# Specify the board used
-ifeq "$(BOARD)" ""
-BOARD=EvKit_V1
-#BOARD=FTHR_RevA
-endif
-...
-```
+    ```Makefile
+    ...
+    # Specify the board used
+    ifeq "$(BOARD)" ""
+    BOARD=EvKit_V1
+    #BOARD=FTHR_RevA
+    endif
+    ...
+    ```
 
-If using the Featherboard (FTHR_RevA):
+If using the Featherboard [(FTHR_RevA)](https://www.maximintegrated.com/en/products/microcontrollers/MAX78000FTHR.html):
 
-- Connect a USB cable between the PC and the CN1 (USB/PWR) connector.
-- Open a terminal application on the PC and connect to the EV kit's console UART at 115200, 8-N-1.
-- Select "`FTHR_RevA`" for `BOARD` in `Makefile`
+1. Connect a USB cable between the PC and the CN1 (USB/PWR) connector.
+2. Open a terminal application on the PC and connect to the EV kit's console UART at 115200, 8-N-1.
+3. Select "`FTHR_RevA`" for `BOARD` in `Makefile`
 
-```Makefile
-...
-# Specify the board used
-ifeq "$(BOARD)" ""
-#BOARD=EvKit_V1
-BOARD=FTHR_RevA
-endif
-...
-```
+    ```Makefile
+    ...
+    # Specify the board used
+    ifeq "$(BOARD)" ""
+    #BOARD=EvKit_V1
+    BOARD=FTHR_RevA
+    endif
+    ...
+    ```
 
 ## Expected Output
 
