@@ -8,7 +8,7 @@ The `Hello_World` prints an incrementing count to the UART console and an LED is
 
 ## Setup
 
-If using the Standard EV kit [(EvKit_V1)](https://www.maximintegrated.com/en/products/microcontrollers/MAX78000EVKIT.html):
+If using the Standard EV kit [(EvKit_V1)](https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/max78000evkit.html):
 
 1. Connect a USB cable between the PC and the CN1 (USB/PWR) connector.
 2. Connect pins 1 and 2 (P0_1) of the JH1 (UART 0 EN) header.
@@ -27,7 +27,7 @@ If using the Standard EV kit [(EvKit_V1)](https://www.maximintegrated.com/en/pro
     ...
     ```
 
-If using the Featherboard [(FTHR_RevA)](https://www.maximintegrated.com/en/products/microcontrollers/MAX78000FTHR.html):
+If using the Featherboard [(FTHR_RevA)](https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/max78000fthr.html):
 
 1. Connect a USB cable between the PC and the CN1 (USB/PWR) connector.
 2. Open a terminal application on the PC and connect to the Featherboard UART console at `115200/8-N-1`.
