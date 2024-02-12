@@ -9,7 +9,7 @@ _Note: Install the [Analog Devices MSDK](https://www.analog.com/en/design-center
 Use the following steps to program the [MAX78000FTHR](https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/max78000fthr.html) board with bootloader code. For complete list of documentation see [Documentation](#documentation) below.
 
 1. Connect the micro-USB cable to the [MAX78000FTHR](https://www.analog.com/en/design-center/evaluation-hardware-and-software/evaluation-boards-kits/max78000fthr.html) and the PC.
-2. Under the `C:\MaximSDK\Tools\MinGW\msys\1.0` directory, double-click on `msys.bat`. This opens a MinGW window.
+2. Under the `C:\MaximSDK\Tools\MSYS2` directory, double-click on `msys.bat`. This opens a MinGW window.
 3. Navigate to the demo directory by typing:
 
     ```shell
